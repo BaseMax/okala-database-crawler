@@ -1,6 +1,6 @@
 # 🛒 Okala Database Crawler
 
-A robust PHP-based crawler to extract and save product data from [Okala](https://www.okala.com/) — including stores, categories, and product details in structured JSON format.
+A robust PHP-based crawler to extract and save product data from [Okala](https://www.okala.com/) including stores, categories, and product details in structured JSON format.
 
 ---
 
