@@ -23,11 +23,11 @@ A robust PHP-based crawler to extract and save product data from [Okala](https:/
 ```
 data/
 ├── search/
-│   └── {store\_id}/{category\_slug}/{page}.json
+│   └── {store_id}/{category_slug}/{page}.json
 ├── product/
-│   └── {product\_id}/
+│   └── {product_id}/
 │       ├── features.json
-│       └── {store\_id}/detail.json
+│       └── {store_id}/detail.json
 
 ````
 
