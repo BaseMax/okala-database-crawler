@@ -22,11 +22,12 @@ $stores = [
 ];
 
 $categories = [
+    "https://www.okala.com/store/2319/browse/kalabarg?rootId=1467",
     "https://www.okala.com/store/2319/browse/refreshments?rootId=1467",
     "https://www.okala.com/store/2319/browse/dairy-products?rootId=1462",
     "https://www.okala.com/store/2319/browse/groceries?rootId=1461",
     "https://www.okala.com/store/2319/browse/home-hygiene?rootId=1471",
-    "https://www.okala.com/store/2319/browse/Beverages?rootId=1465",
+    "https://www.okala.com/store/2319/browse/beverages?rootId=1465",
     "https://www.okala.com/store/2319/browse/spices?rootId=1469",
     "https://www.okala.com/store/2319/browse/canned-ready-food?rootId=1464",
     "https://www.okala.com/store/2319/browse/cosmetics-hygiene?rootId=1472",
@@ -35,7 +36,7 @@ $categories = [
     "https://www.okala.com/store/2319/browse/home-stuff?rootId=1473",
     "https://www.okala.com/store/2319/browse/baby-mother-care?rootId=1474",
     "https://www.okala.com/store/2319/browse/fruits-vegetables?rootId=1470",
-    "https://www.okala.com/store/2319/browse/nuts?rootId=1468",
+    "https://www.okala.com/store/2319/browse/nuts-sweets?rootId=1468",
     "https://www.okala.com/store/2319/browse/multiples?rootId=1850",
 ];
 
@@ -56,7 +57,7 @@ function fetch_get(string $url): array|string|null {
         'upgrade-insecure-requests: 1',
     ];
 
-    $cookie = '_gcl_au=1.1.1510460956.1748602831; _ga=GA1.1.379923437.1748602833; analytics_campaign={"source":"github.com","medium":"referral"}; _clck=ostbpu|2|fxu|0|1976; BIGipServerTEK-Prod-NginX-VIP--443=120987564.47873.0000; _ga_FBKCT7S8Z5=GS2.1.s1753293081$o20$g1$t1753294121$j12$l0$h217809384; _clsk=4tibz0|1753294136607|14|1|y.clarity.ms/collect; TS01ac68a0=01f0c73cc9b0a467e79d79c478af9b1a8664c59cc7b3374585adf2affac7a5478bc35a3ba8f37abef4adea8c38c55110c8516c5c6510c8880a56002670135f0724983f10b9; TSb7bc4491027=0841fa63d9ab200069f59feb957064c1e22f15cb330b4a1e8b7fdd883255be2f5cce061027efc363088c739ad8113000a5c8b8b7e1511389860729e05dc6df00b21bd4dee41a8c6b178b28d063b305ba7866707675021925db89ee402444c1bb';
+    $cookie = 'analytics_token=cb69e189-3d01-e610-8322-c5ff11918450; _ga=GA1.1.1425407608.1760715667; analytics_campaign={%22source%22:%22takhfifhot.com%22%2C%22medium%22:%22referral%22}; unique_id=64fe04da-484c-4b41-b9ba-9390a077ebcb; _gcl_au=1.1.913143169.1776721055; TS01c37a3d=01f0c73cc98597ed05c8d78d040ba9b4142ea04edd5d42a77ed505453894a93c40199e02ef7889ab52cae8ae2e18693fee892a0212; user_uuid=32063c6e-098f-437f-8777-291d5d7c3786; checkTenant=true; metrix_user_id=null; advertising_id=null; idfa=null; _clck=14u8btu%5E2%5Eg6g%5E0%5E2116; yektanet_session_last_activity=5/29/2026; inapp-modal-visited=5.0; inActivityStatus=true; sessionId=2958b08b-3627-4d55-be9d-dd819d4c9cd9; sessionStartTime=Fri%20May%2029%202026%2013:52:07%20GMT+0330%20(Iran%20Standard%20Time); analytics_session_token=c9bf2716-dcfe-19b5-537c-c40cb308f3ed; refresh_token=0D63E727017591A5AC4A2F4B68BE44ADE63559587E5728BE5B1441C974376431; TS0163d06f=01f0c73cc9a44c902de1b133b3601b3daed99af66420c1687a81718b5389bff5c545160feafd0ac88d46608c5d36dcacc1a79b8428b2a008a7a8ee926d709b22ad2d4571b0; token=eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzRjRFNUExQ0NGNUU4NjRBQTI3MzgyMkM3OENERTIxQTM4MkRBOENSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IkVfVGxvY3oxNkdTcUp6Z2l4NHplSWFPQzJvdyJ9.eyJuYmYiOjE3ODAwNTAyMTQsImV4cCI6MTc4MDA1MjAxNCwiaXNzIjoiaHR0cDovL2NlcmJlcnVzLm1lbWJlcnNoaXAiLCJjbGllbnRfaWQiOiJjdXN0b21lcl9jbGllbnRfaWQiLCJzdWIiOiIxMTE1NzA1MCIsImF1dGhfdGltZSI6MTc4MDA1MDIxNCwiaWRwIjoibG9jYWwiLCJ1c2VySWQiOiIxMTE1NzA1MCIsInVzZXJuYW1lIjoiMDkxMzQ5NTA3ODciLCJhbHRlcm5hdGl2ZUN1c3RvbWVySWQiOiIxMTE1NzA1MCIsInRlbmFudCI6Im9rYWxhIiwidG9rZW4taWQiOiJjMjc4OTcyNi0wNjhlLTQ3MDYtYTgwYi00ZDNjMzBmNzkxMzVfOWFjYTg2ODItMjA3YS00MjkwLTgxMzAtZjYxNWNiZGM2NWJiIiwiY2VyYmVydXNJZCI6ImMyNzg5NzI2LTA2OGUtNDcwNi1hODBiLTRkM2MzMGY3OTEzNSIsImp0aSI6Ijc2ODVFNDU3NzY1MkE2NDQyRDc2QzAxN0IxOEUwRjcyIiwiaWF0IjoxNzgwMDUwMjE0LCJzY29wZSI6WyJvZmZsaW5lX2FjY2VzcyJdLCJhbXIiOlsiY3VzdG9tZXJfZ3JhbnRfdHlwZSJdfQ.Tl5GbNCwoeL8h84_5LPOpQmKfHZuDGWHe1IooqEUdY5He40jkzGto3mThuICC0eJQT4ja0TBAo6XYw5gsy6qEeTM-92y-NxcNRKUOnErk1PgxBgSOhFlQPir1l0Hzv5QIS_extcB6bZz2y2zpxysEfAeGwBAF07Z9r8Sx_pwbKB3JOhFkT-TVBZQfJdE4ArIJY5HTfNdsPx7vMGd4d9gJ85fpGg9ZdIWDdzhNH0lL47ayOoIh8mWbDcYf5g99pMx50AhvYnEbFvTKwybhWQtUugSMroHLl2R9sgPKAlLhww1hzXVtrZaqCeea8PrjrtKpy0-ulI1vzdgX2FgrKu4fQ; tokenMS=eyJhbGciOiJSUzI1NiIsImtpZCI6IjEzRjRFNUExQ0NGNUU4NjRBQTI3MzgyMkM3OENERTIxQTM4MkRBOENSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IkVfVGxvY3oxNkdTcUp6Z2l4NHplSWFPQzJvdyJ9.eyJuYmYiOjE3ODAwNTAyMTQsImV4cCI6MTc4MDA1MjAxNCwiaXNzIjoiaHR0cDovL2NlcmJlcnVzLm1lbWJlcnNoaXAiLCJjbGllbnRfaWQiOiJjdXN0b21lcl9jbGllbnRfaWQiLCJzdWIiOiIxMTE1NzA1MCIsImF1dGhfdGltZSI6MTc4MDA1MDIxNCwiaWRwIjoibG9jYWwiLCJ1c2VySWQiOiIxMTE1NzA1MCIsInVzZXJuYW1lIjoiMDkxMzQ5NTA3ODciLCJhbHRlcm5hdGl2ZUN1c3RvbWVySWQiOiIxMTE1NzA1MCIsInRlbmFudCI6Im9rYWxhIiwidG9rZW4taWQiOiJjMjc4OTcyNi0wNjhlLTQ3MDYtYTgwYi00ZDNjMzBmNzkxMzVfOWFjYTg2ODItMjA3YS00MjkwLTgxMzAtZjYxNWNiZGM2NWJiIiwiY2VyYmVydXNJZCI6ImMyNzg5NzI2LTA2OGUtNDcwNi1hODBiLTRkM2MzMGY3OTEzNSIsImp0aSI6Ijc2ODVFNDU3NzY1MkE2NDQyRDc2QzAxN0IxOEUwRjcyIiwiaWF0IjoxNzgwMDUwMjE0LCJzY29wZSI6WyJvZmZsaW5lX2FjY2VzcyJdLCJhbXIiOlsiY3VzdG9tZXJfZ3JhbnRfdHlwZSJdfQ.Tl5GbNCwoeL8h84_5LPOpQmKfHZuDGWHe1IooqEUdY5He40jkzGto3mThuICC0eJQT4ja0TBAo6XYw5gsy6qEeTM-92y-NxcNRKUOnErk1PgxBgSOhFlQPir1l0Hzv5QIS_extcB6bZz2y2zpxysEfAeGwBAF07Z9r8Sx_pwbKB3JOhFkT-TVBZQfJdE4ArIJY5HTfNdsPx7vMGd4d9gJ85fpGg9ZdIWDdzhNH0lL47ayOoIh8mWbDcYf5g99pMx50AhvYnEbFvTKwybhWQtUugSMroHLl2R9sgPKAlLhww1hzXVtrZaqCeea8PrjrtKpy0-ulI1vzdgX2FgrKu4fQ; user={%22id%22:11157050%2C%22alternativeId%22:%22c2789726-068e-4706-a80b-4d3c30f79135%22%2C%22alternativeCustomerId%22:11157050%2C%22firstName%22:%22%D8%B3%DB%8C%D8%AF%D8%B9%D9%84%DB%8C%22%2C%22lastName%22:%22%D9%85%D8%AD%D9%85%D8%AF%DB%8C%D9%87%22%2C%22birthDate%22:%222000-05-27T19:16:00%22%2C%22genderCode%22:1%2C%22emailAddress%22:%22maxbasecode@gmail.com%22%2C%22userName%22:%2209134950787%22%2C%22mobilePhone%22:%2209134950787%22%2C%22stateCode%22:1%2C%22customerIsLoggedInForFirstTime%22:false%2C%22firstLoginDateTime%22:%222022-08-03T19:34:28.54%22%2C%22state%22:false%2C%22hasAddress%22:false%2C%22hasPassword%22:false%2C%22birthDateEpoch%22:959438760}; _clsk=g1oqzp%5E1780050648228%5E33%5E0%5Er.clarity.ms%2Fcollect; _ga_FBKCT7S8Z5=GS2.1.s1780050130$o10$g1$t1780050655$j22$l0$h211240195';
 
     $options = [
         CURLOPT_RETURNTRANSFER => true,
